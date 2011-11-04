@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/minipage-marginpar
+# catalog-date 2008-04-09 16:44:20 +0200
+# catalog-license lppl
+# catalog-version v0.2
 Name:		texlive-minipage-marginpar
 Version:	v0.2
 Release:	1
@@ -49,6 +55,7 @@ define similar environments or commands.
 #- source
 %doc %{_texmfdistdir}/source/latex/minipage-marginpar/minipage-marginpar.dtx
 %doc %{_texmfdistdir}/source/latex/minipage-marginpar/minipage-marginpar.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ define similar environments or commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
