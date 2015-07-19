@@ -6,7 +6,7 @@
 # catalog-version v0.2
 Name:		texlive-minipage-marginpar
 Version:	v0.2
-Release:	9
+Release:	10
 Summary:	Minipages with marginal notes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/minipage-marginpar
